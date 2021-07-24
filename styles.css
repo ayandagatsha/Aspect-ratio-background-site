@@ -1,0 +1,22 @@
+/* Apply border box size to all elements so border size
+doesn't increase due to padding or contents. Optional, 
+font placement here is perfect. */
+* {
+    box-sizing: border-box;
+  
+}
+
+/* Ensure the whole screen of the web page is covered
+by a central image */
+html, body {
+    margin: 0;
+}
+
+.full-screen-container {
+    background-image: url("background_image.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    
+}
