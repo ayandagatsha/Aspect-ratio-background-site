@@ -7,7 +7,8 @@ font placement here is perfect. */
 }
 
 /* Ensure the whole screen of the web page is covered
-by a central image */
+by a central image an does a fade in scale from 
+microsize to fullscreen effect*/
 html, body {
     margin: 0;
 }
@@ -18,5 +19,24 @@ html, body {
     width: 100vw;
     background-size: cover;
     background-position: center;
-    
+  animation: yourAnimation 2s ease-in 1s 1 forwards;
+    opacity: 0;
+}
+
+@keyframes yourAnimation {
+    0%{
+        border: 1px solid rgb(160, 131, 131);
+        border-radius: 0;
+        background: white;
+        transform: scale(0.0);
+        opacity: 0;
+    }
+
+    100%{
+        border: 1px solid rgb(160, 131, 131);
+        border-radius: 0;
+        background: white;
+        transform: scale(1);
+        opacity: 1;
+    }
 }
